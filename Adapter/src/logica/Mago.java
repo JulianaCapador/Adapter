@@ -1,11 +1,18 @@
 package logica;
 
+import javax.swing.JOptionPane;
+
+import gui.pantalla1;
+
 public class Mago {
 	
+	
 	public void Flotar(){
-		System.out.println("Mago flotando");
+		JOptionPane.showMessageDialog(null, "Mago flotando");
+		//System.out.println("Mago flotando");
 	}
 	public void Lanzar(){
-		System.out.println("Lanzando llamas");
+		JOptionPane.showMessageDialog(null, "Mago atacando");
+		//System.out.println("Lanzando llamas");
 	}
 }

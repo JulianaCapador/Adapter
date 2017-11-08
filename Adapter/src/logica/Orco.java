@@ -1,13 +1,17 @@
 package logica;
 
-public class Orco {
+public class Orco extends Personaje{
 	
-	public void Pisar(){
+	@Override
+	public void caminar() {
 		System.out.println("Aplastando");
+		
 	}
-	
-	public void Golpear(){
+
+	@Override
+	public void atacar() {
 		System.out.println("Golpeando con Mazo");
+		
 	}
 
 }

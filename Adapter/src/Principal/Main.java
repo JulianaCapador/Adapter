@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import logica.AdaptadorPersonaje;
+import logica.Orco;
 import logica.Personaje;
 
 	
@@ -21,6 +22,7 @@ public class Main {
 		
 		System.out.println("Por favor seleccione una opcion");
 		System.out.println("1. Mago");
+		System.out.println("2. Orco");
 		opcion = Integer.parseInt(in.readLine());
 		
 		switch(opcion){
@@ -29,7 +31,13 @@ public class Main {
 			personaje = new AdaptadorPersonaje();
 			procesar();
 			
-		
+			break;
+			
+		case 2:
+			Orco orquito = new Orco();
+			orquito.caminar();
+			orquito.atacar();
+			break;
 		}
 	}
 	
